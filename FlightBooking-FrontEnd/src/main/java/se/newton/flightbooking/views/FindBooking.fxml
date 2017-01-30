@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se.newton.flightbooking.controllers.FindBookingController">
+    <children>
+        <BorderPane AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="50.0">
+            <top>
+                <HBox spacing="15.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <TextField fx:id="txtBookingId" minWidth="200.0" promptText="Ange bookningnr ..." />
+                        <Button fx:id="btnFind" mnemonicParsing="false" text="Sök" />
+                    </children>
+                    <BorderPane.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                    </BorderPane.margin>
+                </HBox>
+            </top>
+            <center>
+                <TableView>
+                    <columns>
+                        <TableColumn fx:id="colfName" minWidth="200.0" prefWidth="-1.0" text="Förnamn" />
+                        <TableColumn fx:id="collName" minWidth="200.0" prefWidth="-1.0" text="Efternamn" />
+                        <TableColumn fx:id="colEmail" minWidth="200.0" prefWidth="-1.0" text="Epost" />
+                    </columns>
+                </TableView>
+            </center>
+            <bottom>
+                <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="btnRemoveBooking" mnemonicParsing="false" text="Avboka" />
+                    </children>
+                    <BorderPane.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                    </BorderPane.margin>
+                </HBox>
+            </bottom>
+        </BorderPane>
+    </children>
+</AnchorPane>
