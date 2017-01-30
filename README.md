@@ -6,4 +6,4 @@ Använd verktyg: NeatBeans, mySQL
 
 FrontEnd : JavaFX
 
-BackEnd : REST-full webservice med mySQL databas
+BackEnd : REST-full webservice med mySQL databas som kör under glassfish applikation server
